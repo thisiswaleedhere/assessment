@@ -20,7 +20,7 @@ function App() {
 
         {/* title */}
 
-        <h1 className="py-4 font-black text-gray-900 text-3xl sm:text-4xl">React Calculator</h1>
+        <h1 className="py-4 font-black text-gray-900 text-4xl sm:text-5xl">React Calculator</h1>
 
 
         {/* Single Row Component */}
@@ -29,14 +29,14 @@ function App() {
           addStack.map(({ value, type }, i) => {
             return (<SingleRow key={i} setSeed={setSeed} index={i} number={value} type={type} addStack={addStack} setAddStack={setAddStack} />)
           })
-          : <div className="text-xs px-2"> Click on the 'Add Row' button to start adding numbers </div>
+          : <div className="text-xs sm:text-sm px-2"> Click on the 'Add Row' button to start adding numbers </div>
         }
 
 
         {/* 'Add Row' Button Component */}
 
         <button
-          className="mt-4 px-4 py-1 rounded-2xl font-medium bg-yellow-400 shadow-default hover:scale-110 hover:font-bold transition-all"
+          className="mt-4 px-4 py-1 rounded-2xl text-base sm:text-lg font-medium bg-yellow-400 shadow-default hover:scale-110 hover:font-bold transition-all"
           onClick={() => setAddStack([...addStack, { value: '', type: 'enabled' }])}>
           Add Row
         </button>
@@ -45,7 +45,7 @@ function App() {
 
 
         {/* Result Display  */}
-        <div className="flex justify-center text-xl py-6">
+        <div className="flex justify-center text-xl sm:text-3xl py-6">
 
           <div>Result:</div>
 

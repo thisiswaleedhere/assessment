@@ -52,11 +52,11 @@ const SingleRow = ({ index, setSeed, number, type, addStack, setAddStack }) => {
 
     return (
 
-        <div className='relative flex flex-col sm:flex-row sm:justify-around mx-6 md:w-5/6 rounded-3xl sm:rounded-full md:mx-auto sm:h-10 bg-gray-200 pt-2 sm:pb-2 mb-2'>
+        <div className='relative flex flex-col sm:flex-row sm:justify-around mx-6 md:w-5/6 rounded-3xl sm:rounded-full md:mx-auto sm:h-12 bg-gray-200 pt-2 sm:pb-2 mb-2'>
 
 
             {/* Sign Toggler Component  */}
-            <div className='w-24 mx-auto sm:mx-0'><ToggleSwitch setSign={setSign} /></div>
+            <div className='w-24 mx-auto my-auto sm:mx-0'><ToggleSwitch setSign={setSign} /></div>
 
 
 
@@ -68,9 +68,9 @@ const SingleRow = ({ index, setSeed, number, type, addStack, setAddStack }) => {
                 min='0'
                 value={num}
                 onChange={(event) => setNum(event.target.value)}
-                className="pl-2 w-48 mx-auto mt-2 sm:my-0 sm:mx-1 rounded-lg" />
+                className="pl-2 w-48 sm:w-3/5 mx-auto mt-2 sm:my-0 sm:mx-1 rounded-lg" />
 
-            {!isEnabled && <div className='absolute h-28 sm:h-10 w-full rounded-3xl sm:rounded-full left-0 top-0 bg-gray-400 opacity-80'></div>}
+            {!isEnabled && <div className='absolute h-28 sm:h-12 w-full rounded-3xl sm:rounded-full left-0 top-0 bg-gray-400 opacity-80'></div>}
 
 
             {/* Button Components  */}
@@ -88,7 +88,7 @@ const SingleRow = ({ index, setSeed, number, type, addStack, setAddStack }) => {
 
                 {/* Delete Button Component */}
                 <button
-                    className='z-20 h-6 w-20 mx-auto bg-white px-4 sm:mx-2 rounded-2xl text-xs font-bold text-red-500 outline-white hover:outline-double hover:outline-red-500 '
+                    className='z-20 h-6 w-20 mx-auto my-auto bg-white px-4 sm:mx-2 rounded-2xl text-xs font-bold text-red-500 outline-white hover:outline-double hover:outline-red-500 '
                     onClick={deleteHandler}>
                     Delete
                 </button>
