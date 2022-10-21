@@ -13,14 +13,14 @@ function App() {
 
   return (
 
-    <div className="min-w-[350px] max-w-5xl mx-auto h-screen pt-8 bg-[url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] ">
+    <div className="min-w-[350px] bg-cover mx-auto h-screen pt-8 bg-[url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] ">
 
       <div className="w-4/5 lg:w-3/5 mx-auto mb-8 text-center shadow-default bg-gray-200 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-2xl font-quicksand" key={seed}>
 
 
         {/* title */}
 
-        <h1 className="py-4 font-semibold text-gray-900 text-3xl sm:text-4xl">React Calculator</h1>
+        <h1 className="py-4 font-black text-gray-900 text-3xl sm:text-4xl">React Calculator</h1>
 
 
         {/* Single Row Component */}
