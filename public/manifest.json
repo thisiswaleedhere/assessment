@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Calculator App",
+  "name": "React Calculator App - Addition Edition",
   "icons": [
     {
       "src": "favicon.ico",
